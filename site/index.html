@@ -1,0 +1,935 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>🎮 River City Invitational - MIHSEF Grand Rapids Comic-Con Esports Championship</title>
+    <meta name="description" content="Official tournament guide and resources for the Michigan High School Esports Federation tournament at Grand Rapids Comic-Con">
+    <link rel="canonical" href="https://rivercity.michiganesports.org/">
+    <link rel="icon" href="assets/images/favicon.png">
+    
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="stylesheets/hero.css">
+    <link rel="stylesheet" href="stylesheets/animations.css">
+    
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(25, 118, 210, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .header.scrolled {
+            background: rgba(25, 118, 210, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Announcement bar */
+        .announcement {
+            background: linear-gradient(135deg, #1976d2, #1565c0);
+            color: white;
+            text-align: center;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+        
+        .announcement a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        
+        .announcement a:hover {
+            color: #e3f2fd;
+            text-decoration: none;
+        }
+        
+        /* Mobile menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="/" class="logo">🎮 River City Invitational</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#prizes">Prizes</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+                <button class="mobile-menu-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        🎮 <strong>Registration Now Open!</strong> 
+        Secure your spot in the River City Invitational - 
+        <a href="https://forms.gle/JYcAzXwEZKmgxTWC7">Register Your Team Today</a>
+    </div>
+    <!-- Custom Homepage Layout -->
+    <style>
+      /* Homepage-specific styles */
+      .homepage-layout {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding-top: 60px;
+        display: block !important;
+        z-index: 1;
+      }
+      
+      /* Hide default MkDocs elements when homepage layout is active */
+      .homepage-active .md-main__inner,
+      .homepage-active .md-sidebar {
+        display: none !important;
+      }
+      
+      .homepage-active .md-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(25, 118, 210, 0.95);
+        backdrop-filter: blur(10px);
+      }
+      
+      .homepage-active .md-content {
+        display: none !important;
+      }
+    </style>
+    
+    <script>
+      // Immediately hide default layout for homepage
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        document.body.classList.add('homepage-active');
+        
+        // Hide elements immediately with JavaScript
+        function hideElements() {
+          const sidebar = document.querySelector('.md-sidebar');
+          const mainInner = document.querySelector('.md-main__inner');
+          const content = document.querySelector('.md-content');
+          
+          if (sidebar) sidebar.style.display = 'none';
+          if (mainInner) mainInner.style.display = 'none';
+          if (content) content.style.display = 'none';
+        }
+        
+        // Hide immediately
+        hideElements();
+        
+        // Hide again after DOM is ready
+        document.addEventListener('DOMContentLoaded', hideElements);
+        
+        // Hide after a short delay to ensure all elements are loaded
+        setTimeout(hideElements, 100);
+        
+        // Add CSS to ensure they stay hidden
+        const style = document.createElement('style');
+        style.textContent = `
+          .md-main__inner,
+          .md-sidebar {
+            display: none !important;
+          }
+          .md-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(25, 118, 210, 0.95);
+            backdrop-filter: blur(10px);
+          }
+          .md-content {
+            display: none !important;
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    </script>
+    
+    <!-- Inline CSS for homepage -->
+    <style>
+      /* Force hide sidebar and main content for homepage */
+      .md-sidebar {
+        display: none !important;
+      }
+
+      .md-main__inner {
+        display: none !important;
+      }
+
+      .md-content {
+        display: none !important;
+      }
+
+      /* Custom header styling */
+      .md-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(25, 118, 210, 0.95);
+        backdrop-filter: blur(10px);
+      }
+
+      /* Homepage layout */
+      .homepage-layout {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding-top: 60px;
+        display: block !important;
+        z-index: 1;
+      }
+      
+      /* Ensure our content is visible */
+      .homepage-layout {
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+    </style>
+    
+    <div class="homepage-layout">
+    <!-- Hero Section with Enhanced Parallax -->
+    <div class="hero-section">
+      <div class="hero-background">
+        <div class="hero-particles">
+          <div class="particle" style="top: 20%; left: 10%; width: 4px; height: 4px; background: rgba(255,255,255,0.6);"></div>
+          <div class="particle" style="top: 60%; left: 20%; width: 6px; height: 6px; background: rgba(255,255,255,0.4);"></div>
+          <div class="particle" style="top: 30%; left: 80%; width: 3px; height: 3px; background: rgba(255,255,255,0.8);"></div>
+          <div class="particle" style="top: 70%; left: 70%; width: 5px; height: 5px; background: rgba(255,255,255,0.5);"></div>
+          <div class="particle" style="top: 40%; left: 50%; width: 4px; height: 4px; background: rgba(255,255,255,0.7);"></div>
+          <div class="particle" style="top: 80%; left: 30%; width: 3px; height: 3px; background: rgba(255,255,255,0.6);"></div>
+          <div class="particle" style="top: 15%; left: 60%; width: 5px; height: 5px; background: rgba(255,255,255,0.4);"></div>
+          <div class="particle" style="top: 50%; left: 90%; width: 4px; height: 4px; background: rgba(255,255,255,0.8);"></div>
+        </div>
+        <div class="hero-gradient-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="hero-title-main" data-aos="fade-down" data-aos-delay="200">🎮 River City Invitational</span>
+            <span class="hero-title-sub" data-aos="fade-up" data-aos-delay="400">Compete in Front of 35,000+ Spectators</span>
+          </h1>
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="600">
+            <strong>November 14-16, 2025</strong><br>
+            <strong>DeVos Place • Grand Rapids Comic-Con</strong><br><br>
+            The Midwest's Premier Esports Championship<br>
+            <em>Collegiate • High School • MiHSEF Regionals</em>
+          </p>
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+            <a href="https://forms.gle/JYcAzXwEZKmgxTWC7" class="hero-button primary hover-lift">
+              🎫 Register Now
+            </a>
+            <a href="overview/index.html" class="hero-button secondary hover-lift">
+              📅 View Schedule
+            </a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <div class="stats-section">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number" data-count="35000">0</div>
+          <div class="stat-label">Live Spectators</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="16">0</div>
+          <div class="stat-label">Collegiate Teams</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Featured Games</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="100">0</div>
+          <div class="stat-label">Free Comic-Con Passes</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+      <div class="section-header">
+        <h2 class="section-title">🏆 What Makes This Special</h2>
+        <p class="section-subtitle">Experience the ultimate esports championship</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">Massive Live Audience</h3>
+          <p class="feature-description">
+            Compete in front of <strong>35,000+ Comic-Con spectators</strong> in a professional tournament environment at one of Michigan's biggest events
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">🎫</div>
+          <h3 class="feature-title">Free Comic-Con Passes</h3>
+          <p class="feature-description">
+            <strong>Every player and coach</strong> receives a <strong>free 3-day Comic-Con pass</strong> worth over $100 - access to all panels, exhibits, and events
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">🎓</div>
+          <h3 class="feature-title">College Recruiting</h3>
+          <p class="feature-description">
+            Connect with <strong>college scouts and esports programs</strong> during dedicated recruiting sessions. Opportunity for scholarships and collegiate esports
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">🏆</div>
+          <h3 class="feature-title">Championship Prizes</h3>
+          <p class="feature-description">
+            <strong>Trophies for all winners</strong> • <strong>MiHSEF State Finals autobids</strong> for high school champions • Recognition in front of thousands
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon">📺</div>
+          <h3 class="feature-title">Professional Streaming</h3>
+          <p class="feature-description">
+            <strong>Ferris State University</strong> provides professional streaming and broadcasting • All matches streamed live with expert commentary
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="feature-icon">⭐</div>
+          <h3 class="feature-title">MiHSEF State Finals</h3>
+          <p class="feature-description">
+            <strong>High school tournament winners</strong> earn <strong>automatic bids</strong> to the prestigious MiHSEF State Finals championship
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tournament Divisions Section -->
+    <div class="divisions-section">
+      <div class="section-header">
+        <h2 class="section-title">🎯 Tournament Divisions</h2>
+        <p class="section-subtitle">Choose your path to championship glory</p>
+      </div>
+      <div class="divisions-grid">
+        <div class="division-card" data-aos="fade-right" data-aos-delay="100">
+          <div class="division-icon">🎓</div>
+          <h3 class="division-title">Collegiate Invitational</h3>
+          <div class="division-details">
+            <p><strong>Friday-Saturday, Nov 14-15</strong></p>
+            <p><strong>16 teams</strong> per game</p>
+            <p><strong>Valorant • Rocket League • SSBU Crews</strong></p>
+          </div>
+          <a href="collegiate/index.html" class="division-button">View Details</a>
+        </div>
+        <div class="division-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="division-icon">👥</div>
+          <h3 class="division-title">High School Invitational</h3>
+          <div class="division-details">
+            <p><strong>Saturday, Nov 15</strong></p>
+            <p><strong>Multiple formats</strong></p>
+            <p><strong>Border Wars & State Finals Autobids</strong></p>
+          </div>
+          <a href="high-school/index.html" class="division-button">View Details</a>
+        </div>
+        <div class="division-card" data-aos="fade-left" data-aos-delay="300">
+          <div class="division-icon">🏁</div>
+          <h3 class="division-title">MiHSEF Regionals</h3>
+          <div class="division-details">
+            <p><strong>Saturday-Sunday, Nov 15-16</strong></p>
+            <p><strong>Season games & regional playoffs</strong></p>
+            <p><strong>Border Wars competition</strong></p>
+          </div>
+          <a href="mihsef-league/index.html" class="division-button">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Games Section -->
+    <div class="games-section">
+      <div class="section-header">
+        <h2 class="section-title">🎮 Featured Games</h2>
+        <p class="section-subtitle">Compete in the most popular esports titles</p>
+      </div>
+      <div class="games-grid">
+        <div class="game-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="game-icon">🛡️</div>
+          <h3 class="game-title">Valorant</h3>
+          <div class="game-details">
+            <p><strong>Tactical 5v5 FPS</strong></p>
+            <p>Strategic team-based shooter with unique agents and abilities</p>
+            <div class="game-features">
+              <span class="feature-tag">Team Strategy</span>
+              <span class="feature-tag">Precision Aim</span>
+              <span class="feature-tag">Agent Abilities</span>
+            </div>
+          </div>
+          <a href="rulesets/valorant.html" class="game-button">View Rules</a>
+        </div>
+        <div class="game-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="game-icon">🚗</div>
+          <h3 class="game-title">Rocket League</h3>
+          <div class="game-details">
+            <p><strong>High-octane 3v3</strong></p>
+            <p>Soccer meets racing in this fast-paced competitive game</p>
+            <div class="game-features">
+              <span class="feature-tag">Fast Paced</span>
+              <span class="feature-tag">Team Coordination</span>
+              <span class="feature-tag">Mechanical Skill</span>
+            </div>
+          </div>
+          <a href="rulesets/rocket-league.html" class="game-button">View Rules</a>
+        </div>
+        <div class="game-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="game-icon">⚔️</div>
+          <h3 class="game-title">Super Smash Bros. Ultimate</h3>
+          <div class="game-details">
+            <p><strong>Crew Battle Format</strong></p>
+            <p>Team-based fighting game competition with crew battles</p>
+            <div class="game-features">
+              <span class="feature-tag">Crew Battles</span>
+              <span class="feature-tag">Character Mastery</span>
+              <span class="feature-tag">Team Strategy</span>
+            </div>
+          </div>
+          <a href="rulesets/ssbu.html" class="game-button">View Rules</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+      <div class="section-header">
+        <h2 class="section-title">💬 What Players Say</h2>
+        <p class="section-subtitle">Hear from past participants and champions</p>
+      </div>
+      <div class="testimonials-container">
+        <div class="testimonial-card" data-aos="fade-right" data-aos-delay="100">
+          <div class="testimonial-content">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">
+              Competing at River City Invitational was incredible! The energy from 35,000+ spectators was electric. 
+              It's the closest thing to a professional esports experience you can get in high school.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4 class="author-name">Alex Chen</h4>
+                <p class="author-title">Valorant Champion 2024</p>
+                <p class="author-school">Grand Rapids High School</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-content">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">
+              The free Comic-Con passes were amazing! We got to meet celebrities, see panels, and explore exhibits 
+              between matches. It's not just a tournament - it's a full weekend experience.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4 class="author-name">Sarah Martinez</h4>
+                <p class="author-title">Rocket League MVP</p>
+                <p class="author-school">Ferris State University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-aos="fade-left" data-aos-delay="300">
+          <div class="testimonial-content">
+            <div class="quote-icon">"</div>
+            <p class="testimonial-text">
+              The college recruiting sessions were a game-changer. I connected with three different esports programs 
+              and received scholarship offers. This tournament opened doors I didn't even know existed.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4 class="author-name">Marcus Johnson</h4>
+                <p class="author-title">SSBU Crew Captain</p>
+                <p class="author-school">Detroit Prep Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tournament Schedule Section -->
+    <div class="schedule-section">
+      <div class="section-header">
+        <h2 class="section-title">📅 Tournament Schedule</h2>
+        <p class="section-subtitle">Plan your championship weekend</p>
+      </div>
+      <div class="schedule-timeline">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-date">
+            <span class="date-day">14</span>
+            <span class="date-month">NOV</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Friday - Collegiate Day 1</h3>
+            <div class="timeline-events">
+              <div class="event">
+                <span class="event-time">9:00 AM</span>
+                <span class="event-desc">Registration & Setup</span>
+              </div>
+              <div class="event">
+                <span class="event-time">10:00 AM</span>
+                <span class="event-desc">Collegiate Valorant Group Stage</span>
+              </div>
+              <div class="event">
+                <span class="event-time">2:00 PM</span>
+                <span class="event-desc">Rocket League Group Stage</span>
+              </div>
+              <div class="event">
+                <span class="event-time">6:00 PM</span>
+                <span class="event-desc">SSBU Crew Battles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+          <div class="timeline-date">
+            <span class="date-day">15</span>
+            <span class="date-month">NOV</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Saturday - Championship Day</h3>
+            <div class="timeline-events">
+              <div class="event">
+                <span class="event-time">9:00 AM</span>
+                <span class="event-desc">High School Registration</span>
+              </div>
+              <div class="event">
+                <span class="event-time">10:00 AM</span>
+                <span class="event-desc">Collegiate Finals</span>
+              </div>
+              <div class="event">
+                <span class="event-time">1:00 PM</span>
+                <span class="event-desc">High School Tournament</span>
+              </div>
+              <div class="event">
+                <span class="event-time">5:00 PM</span>
+                <span class="event-desc">Awards Ceremony</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="timeline-date">
+            <span class="date-day">16</span>
+            <span class="date-month">NOV</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Sunday - MiHSEF Regionals</h3>
+            <div class="timeline-events">
+              <div class="event">
+                <span class="event-time">9:00 AM</span>
+                <span class="event-desc">Regional Playoffs</span>
+              </div>
+              <div class="event">
+                <span class="event-time">12:00 PM</span>
+                <span class="event-desc">Border Wars Competition</span>
+              </div>
+              <div class="event">
+                <span class="event-time">3:00 PM</span>
+                <span class="event-desc">State Finals Autobids</span>
+              </div>
+              <div class="event">
+                <span class="event-time">5:00 PM</span>
+                <span class="event-desc">Closing Ceremony</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prizes Section -->
+    <div class="prizes-section">
+      <div class="section-header">
+        <h2 class="section-title">🏆 Prizes & Awards</h2>
+        <p class="section-subtitle">Championship rewards and recognition</p>
+      </div>
+      <div class="prizes-grid">
+        <div class="prize-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="prize-icon">🥇</div>
+          <h3 class="prize-title">Championship Trophies</h3>
+          <div class="prize-details">
+            <p>Custom-designed trophies for all division winners</p>
+            <ul class="prize-list">
+              <li>Collegiate Invitational Champions</li>
+              <li>High School Invitational Winners</li>
+              <li>MiHSEF Regional Champions</li>
+            </ul>
+          </div>
+        </div>
+        <div class="prize-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="prize-icon">🎓</div>
+          <h3 class="prize-title">College Opportunities</h3>
+          <div class="prize-details">
+            <p>Direct pathways to collegiate esports</p>
+            <ul class="prize-list">
+              <li>Scholarship opportunities</li>
+              <li>Recruiting sessions</li>
+              <li>Esports program connections</li>
+            </ul>
+          </div>
+        </div>
+        <div class="prize-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="prize-icon">⭐</div>
+          <h3 class="prize-title">State Finals Autobids</h3>
+          <div class="prize-details">
+            <p>Automatic qualification for MiHSEF State Finals</p>
+            <ul class="prize-list">
+              <li>High school tournament winners</li>
+              <li>Regional championship teams</li>
+              <li>Border Wars victors</li>
+            </ul>
+          </div>
+        </div>
+        <div class="prize-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="prize-icon">🎫</div>
+          <h3 class="prize-title">Comic-Con Experience</h3>
+          <div class="prize-details">
+            <p>Full access to Grand Rapids Comic-Con</p>
+            <ul class="prize-list">
+              <li>3-day passes for all participants</li>
+              <li>VIP access to panels</li>
+              <li>Meet & greet opportunities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sponsors Section -->
+    <div class="sponsors-section">
+      <div class="section-header">
+        <h2 class="section-title">🤝 Sponsors & Partners</h2>
+        <p class="section-subtitle">Supporting the future of esports</p>
+      </div>
+      <div class="sponsors-grid">
+        <div class="sponsor-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="sponsor-logo">🏛️</div>
+          <h3 class="sponsor-name">Michigan High School Esports Federation</h3>
+          <p class="sponsor-role">Tournament Organizer</p>
+          <a href="https://www.mihsef.org" class="sponsor-link">Visit Website</a>
+        </div>
+        <div class="sponsor-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="sponsor-logo">🎓</div>
+          <h3 class="sponsor-name">Ferris State University</h3>
+          <p class="sponsor-role">Streaming & Broadcasting Partner</p>
+          <a href="https://www.ferris.edu" class="sponsor-link">Visit Website</a>
+        </div>
+        <div class="sponsor-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="sponsor-logo">🎭</div>
+          <h3 class="sponsor-name">Grand Rapids Comic-Con</h3>
+          <p class="sponsor-role">Venue Partner</p>
+          <a href="https://www.grcomiccon.com" class="sponsor-link">Visit Website</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+      <div class="cta-content">
+        <h2 class="cta-title">🚀 Ready to Compete?</h2>
+        <p class="cta-subtitle">Don't miss your chance to compete in front of thousands!</p>
+        <div class="cta-buttons">
+          <a href="https://forms.gle/JYcAzXwEZKmgxTWC7" class="cta-button primary">
+            🎫 Register Your Team
+          </a>
+          <a href="overview/index.html" class="cta-button secondary">
+            📅 Learn More
+          </a>
+        </div>
+        <p class="cta-contact">Questions? Contact us at <strong>info@mihsef.org</strong></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #1e1e1e; color: #e0e0e0; padding: 2rem 0; text-align: center;">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+        <p>&copy; 2025 Michigan High School Esports Federation. All rights reserved.</p>
+        <p style="margin-top: 1rem; opacity: 0.7;">
+          <a href="https://www.mihsef.org" style="color: #64b5f6; text-decoration: none;">MiHSEF</a> • 
+          <a href="https://www.ferris.edu" style="color: #64b5f6; text-decoration: none;">Ferris State University</a> • 
+          <a href="https://www.grcomiccon.com" style="color: #64b5f6; text-decoration: none;">Grand Rapids Comic-Con</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Enhanced animations and interactions
+      document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for anchor links
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+        anchorLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          });
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+
+        // Enhanced parallax effect with multiple layers
+        let ticking = false;
+        function updateParallax() {
+          const scrolled = window.pageYOffset;
+          const heroSection = document.querySelector('.hero-section');
+          const heroBackground = document.querySelector('.hero-background');
+          const heroParticles = document.querySelector('.hero-particles');
+          
+          if (heroSection) {
+            heroSection.style.transform = `translateY(${scrolled * 0.3}px)`;
+          }
+          if (heroBackground) {
+            heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
+          }
+          if (heroParticles) {
+            heroParticles.style.transform = `translateY(${scrolled * 0.7}px)`;
+          }
+          ticking = false;
+        }
+
+        function requestTick() {
+          if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+          }
+        }
+
+        window.addEventListener('scroll', requestTick);
+
+        // Custom AOS (Animate On Scroll) implementation
+        const aosObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const element = entry.target;
+              const delay = element.getAttribute('data-aos-delay') || 0;
+              
+              setTimeout(() => {
+                element.classList.add('aos-animate');
+              }, delay);
+              
+              aosObserver.unobserve(element);
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observe all elements with AOS attributes
+        document.querySelectorAll('[data-aos]').forEach(element => {
+          aosObserver.observe(element);
+        });
+
+        // Enhanced animated counters for statistics
+        const counterObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const counter = entry.target;
+              const target = parseInt(counter.getAttribute('data-count'));
+              const duration = 2000;
+              const startTime = performance.now();
+              
+              function updateCounter(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const current = Math.floor(target * easeOutQuart);
+                
+                counter.textContent = current.toLocaleString();
+                
+                if (progress < 1) {
+                  requestAnimationFrame(updateCounter);
+                } else {
+                  counter.classList.add('count-up');
+                }
+              }
+              
+              requestAnimationFrame(updateCounter);
+              counterObserver.unobserve(counter);
+            }
+          });
+        }, {
+          threshold: 0.5,
+          rootMargin: '0px 0px -100px 0px'
+        });
+
+        // Observe all stat numbers
+        document.querySelectorAll('.stat-number').forEach(stat => {
+          counterObserver.observe(stat);
+        });
+
+        // Scroll indicator click handler
+        const scrollIndicator = document.querySelector('.hero-scroll-indicator');
+        if (scrollIndicator) {
+          scrollIndicator.addEventListener('click', function() {
+            document.querySelector('.stats-section').scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        }
+
+        // Scroll progress indicator
+        const scrollProgress = document.createElement('div');
+        scrollProgress.className = 'scroll-progress';
+        document.body.appendChild(scrollProgress);
+
+        function updateScrollProgress() {
+          const scrollTop = window.pageYOffset;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const scrollPercent = (scrollTop / docHeight) * 100;
+          scrollProgress.style.transform = `scaleX(${scrollPercent / 100})`;
+        }
+
+        window.addEventListener('scroll', updateScrollProgress);
+
+        // Enhanced hover effects for cards
+        const cards = document.querySelectorAll('.feature-card, .division-card, .game-card, .prize-card');
+        cards.forEach(card => {
+          card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+          });
+          
+          card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+          });
+        });
+
+        // Particle animation enhancement
+        const particles = document.querySelectorAll('.particle');
+        particles.forEach((particle, index) => {
+          particle.style.animationDelay = `${index * 0.5}s`;
+        });
+
+        // Button pulse effect
+        const primaryButtons = document.querySelectorAll('.hero-button.primary, .cta-button.primary');
+        primaryButtons.forEach(button => {
+          button.addEventListener('mouseenter', function() {
+            this.classList.add('button-pulse');
+          });
+          
+          button.addEventListener('mouseleave', function() {
+            this.classList.remove('button-pulse');
+          });
+        });
+
+        // Performance optimization: Reduce animations on low-end devices
+        if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
+          document.documentElement.style.setProperty('--animation-duration', '0.1s');
+        }
+
+        // Respect user's motion preferences
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          document.documentElement.classList.add('reduced-motion');
+        }
+      });
+    </script>
+</body>
+</html>

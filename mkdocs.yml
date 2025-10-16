@@ -1,0 +1,105 @@
+site_name: MIHSEF Grand Rapids Comic-Con Esports Championship
+site_description: Official tournament guide and resources for the Michigan High School Esports Federation tournament at Grand Rapids Comic-Con
+site_url: https://rivercity.michiganesports.org
+edit_uri: https://github.com/vandent6/rivercity/edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-2
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to system preference
+  features:
+    - announce.dismiss
+    - header.autohide
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  extra_css:
+    - assets/stylesheets/hero.css
+    - assets/stylesheets/animations.css
+
+plugins:
+  - search
+
+extra:
+  homepage: true
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/MIHSEF
+      name: MIHSEF on Twitter
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/MIHSEF
+      name: MIHSEF on Facebook
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/MIHSEF
+      name: MIHSEF on Instagram
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/MIHSEF
+      name: MIHSEF Discord Server
+    - icon: fontawesome/solid/envelope
+      link: mailto:info@mihsef.org
+      name: Contact MIHSEF
+
+copyright: Copyright &copy; 2025 Michigan High School Esports Federation
+
+nav:
+  - Home: index.md
+  - Overview: overview/index.md
+  - Collegiate Invitational: collegiate/index.md
+  - High School Invitational: high-school/index.md
+  - MiHSEF League and Regionals: mihsef-league/index.md
+  - Rulesets:
+    - Valorant: rulesets/valorant.md
+    - Rocket League: rulesets/rocket-league.md
+    - Super Smash Bros. Ultimate: rulesets/ssbu.md
+  - Venue:
+    - Location: venue/location.md
+  - Resources:
+    - FAQ: resources/faq.md
+    - Contact: resources/contact.md
