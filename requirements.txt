@@ -1,0 +1,14 @@
+# MkDocs Documentation Site Requirements
+# Install with: pip install -r requirements.txt
+
+# Core MkDocs
+mkdocs>=1.5.0
+
+# Material theme for MkDocs (used in mkdocs.yml)
+mkdocs-material>=9.4.0
+
+# Additional useful plugins (optional but recommended)
+mkdocs-search>=0.2.0
+
+# Development dependencies (optional)
+mkdocs-serve>=0.2.0

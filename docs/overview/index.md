@@ -158,8 +158,8 @@
 !!! success "Registration Now Open!"
     Team registration is now open! Secure your spot in the championship. Registration closes **November 12, 2025**.
 
-    [:material-arrow-right: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
-    [:material-arrow-right: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
+    [:material-school: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
+    [:material-account-group: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
     [:material-information: Registration Details](tournament/registration.md){ .md-button }
 
 #### Collegiate Pricing Options (First Come, First Served)
@@ -288,7 +288,8 @@
 !!! success "Join the Championship!"
     Don't miss your chance to compete in front of thousands of spectators at Grand Rapids Comic-Con!
 
-    [:material-arrow-right: Register Now](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
+    [:material-school: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
+    [:material-account-group: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
     [:material-calendar: View Schedule](tournament/schedule.md){ .md-button }
     [:material-help-circle: Get Help](resources/faq.md){ .md-button }
 

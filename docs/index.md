@@ -103,8 +103,8 @@
 !!! success "Registration Now Open!"
     Team registration is now open! Secure your spot in the championship. Registration closes **November 12, 2025**.
 
-    [:material-arrow-right: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
-    [:material-arrow-right: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
+    [:material-school: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
+    [:material-account-group: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
 
 - :material-school: **Collegiate Pricing**
 
@@ -150,7 +150,8 @@
 
 ### Don't miss your chance to compete in front of thousands!
 
-[:material-ticket: Register Your Team](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary .md-button--large }
+[:material-school: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary .md-button--large }
+[:material-account-group: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button .md-button--large }
 [:material-information: Learn More](overview/index.md){ .md-button .md-button--large }
 
 **Questions?** Contact us at **info@mihsef.org**
