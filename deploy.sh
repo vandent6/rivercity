@@ -23,7 +23,8 @@ cd "${PROJ_DIR}"
 # Pull latest changes (if this is a git repo)
 if [ -d ".git" ]; then
     echo "📥 Pulling latest changes..."
-    git pull --rebase
+    # Use the ubuntu user's SSH keys for git operations
+    sudo -u ubuntu git pull --rebase
 fi
 
 # Create/activate virtual environment

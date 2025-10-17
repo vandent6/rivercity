@@ -21,7 +21,8 @@ fi
 
 # Pull latest changes from git
 echo "📥 Pulling latest changes from git..."
-git pull --rebase
+# Use the ubuntu user's SSH keys for git operations
+sudo -u ubuntu git pull --rebase
 
 # Activate virtual environment
 echo "✅ Activating virtual environment..."
