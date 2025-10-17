@@ -462,9 +462,9 @@
 !!! success "Master the Rules!"
     Understanding Valorant tournament rules ensures fair play and competitive success!
 
-    [:material-arrow-right: Register Your Team](tournament/registration.md){ .md-button .md-button--primary }
-    [:material-calendar: View Schedule](tournament/schedule.md){ .md-button }
-    [:material-help-circle: Get Help](resources/faq.md){ .md-button }
+    [:material-arrow-right: Register Your Team](/high-school/index.md){ .md-button .md-button--primary }
+    [:material-calendar: View Schedule](/high-school/index.md){ .md-button }
+    [:material-help-circle: Get Help](/resources/faq.md){ .md-button }
 
 ---
 

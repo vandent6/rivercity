@@ -1,48 +1,48 @@
 # Tournament Overview
 
-- :material-trophy: **Tournament**
+=== "Tournament"
 
     River City Invitational featuring teams from across the Midwest competing in front of 35,000+ spectators at Grand Rapids Comic-Con!
 
-- :material-calendar: **Date**
+=== "Date"
 
     **November 14–16, 2025**  
     Three days of intense competition at one of Michigan's biggest events
 
-- :material-map-marker: **Venue**
+=== "Venue"
 
     **DeVos Place Ballroom C**  
     Downtown Grand Rapids, Michigan
 
-- :material-ticket: **Comic-Con Pass**
+=== "Comic-Con Pass"
 
     **Free 3-day pass** (worth $100+) for each player and coach
 
 ---
 
-- :material-trophy: **Tournament Info**
+=== "Tournament Info"
 
     Everything you need to know about the championship format, rules, and prizes.
 
-    [:material-arrow-right: Tournament Details](tournament/schedule.md){ .md-button }
+    [:material-arrow-right: Tournament Details](#-quick-schedule){ .md-button }
 
-- :material-gamepad-variant: **Game Rulesets**
+=== "Game Rulesets"
 
     Official rules and formats for Valorant, Rocket League, and Super Smash Bros. Ultimate.
 
-    [:material-arrow-right: View Rulesets](rulesets/valorant.md){ .md-button }
+    [:material-arrow-right: View Rulesets](/rulesets/valorant.md){ .md-button }
 
-- :material-map-marker: **Venue & Location**
+=== "Venue & Location"
 
     DeVos Place Convention Center in downtown Grand Rapids, Michigan.
 
-    [:material-arrow-right: Venue Details](venue/location.md){ .md-button }
+    [:material-arrow-right: Venue Details](/venue/location.md){ .md-button }
 
-- :material-help-circle: **Help & Support**
+=== "Help & Support"
 
     FAQ, contact information, and all the resources you need.
 
-    [:material-arrow-right: Get Help](resources/faq.md){ .md-button }
+    [:material-arrow-right: Get Help](/resources/faq.md){ .md-button }
 
 ---
 
@@ -66,32 +66,32 @@
 
     **Championship trophies** and **MiHSEF State Finals autobids** for top performers
 
-    [:material-arrow-right: View Prizes](tournament/prizes.md){ .md-button }
+    [:material-arrow-right: View Prizes](#-tournament-highlights){ .md-button }
 
 ---
 
-## 🎮 Featured Games
+## Featured Games
 
-- :material-shield: **Valorant**
+=== "Valorant"
 
     **Tactical 5v5 FPS**  
     Strategic team-based shooter with unique agents and abilities
 
-    [:material-arrow-right: Valorant Rules](rulesets/valorant.md){ .md-button }
+    [:material-arrow-right: Valorant Rules](/rulesets/valorant.md){ .md-button }
 
-- :material-car-sports: **Rocket League**
+=== "Rocket League"
 
     **High-octane 3v3**  
     Soccer meets racing in this fast-paced competitive game
 
-    [:material-arrow-right: Rocket League Rules](rulesets/rocket-league.md){ .md-button }
+    [:material-arrow-right: Rocket League Rules](/rulesets/rocket-league.md){ .md-button }
 
-- :material-sword-cross: **Super Smash Bros. Ultimate**
+=== "Super Smash Bros. Ultimate"
 
     **Crew Battle Format**  
     Team-based fighting game competition with crew battles
 
-    [:material-arrow-right: SSBU Rules](rulesets/ssbu.md){ .md-button }
+    [:material-arrow-right: SSBU Rules](/rulesets/ssbu.md){ .md-button }
 
 ### Division Information
 
@@ -160,7 +160,7 @@
 
     [:material-school: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
     [:material-account-group: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
-    [:material-information: Registration Details](tournament/registration.md){ .md-button }
+    [:material-information: Registration Details](#-registration--pricing){ .md-button }
 
 #### Collegiate Pricing Options (First Come, First Served)
 - **One Team**: $150
@@ -204,7 +204,7 @@
 !!! info "Need More Details?"
     Get the complete schedule with exact times, locations, and game-specific information.
 
-    [:material-arrow-right: Full Schedule](tournament/schedule.md){ .md-button .md-button--primary }
+    [:material-arrow-right: Full Schedule](#-quick-schedule){ .md-button .md-button--primary }
 
 ---
 
@@ -256,7 +256,7 @@
 !!! info "Need More Venue Details?"
     Get complete information about parking, accessibility, nearby restaurants, and Comic-Con access.
 
-    [:material-arrow-right: Full Venue Details](venue/location.md){ .md-button }
+    [:material-arrow-right: Full Venue Details](/venue/location.md){ .md-button }
 
 ---
 
@@ -266,7 +266,7 @@
 
     Find answers to common questions about registration, eligibility, equipment, and more.
 
-    [:material-arrow-right: View FAQ](resources/faq.md){ .md-button }
+    [:material-arrow-right: View FAQ](/resources/faq.md){ .md-button }
 
 - :material-email: **Contact Us**
 
@@ -275,7 +275,7 @@
     **Collegiate/Streaming**: adamantor@ferris.edu  
     **MiHSEF Regionals**: billd@mihsef.org
 
-    [:material-arrow-right: Contact Form](resources/contact.md){ .md-button }
+    [:material-arrow-right: Contact Form](/resources/contact.md){ .md-button }
 
 - :material-information: **Learn More**
 
@@ -290,8 +290,8 @@
 
     [:material-school: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
     [:material-account-group: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
-    [:material-calendar: View Schedule](tournament/schedule.md){ .md-button }
-    [:material-help-circle: Get Help](resources/faq.md){ .md-button }
+    [:material-calendar: View Schedule](#-quick-schedule){ .md-button }
+    [:material-help-circle: Get Help](/resources/faq.md){ .md-button }
 
 ---
 

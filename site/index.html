@@ -10,6 +10,7 @@
     <link rel="icon" href="assets/images/favicon.png">
     
     <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     
     <!-- Custom Styles -->
@@ -183,7 +184,7 @@
     
     <script>
       // Immediately hide default layout for homepage
-      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname.endsWith('/')) {
         document.body.classList.add('homepage-active');
         
         // Hide elements immediately with JavaScript
@@ -747,6 +748,16 @@
     </footer>
 
     <script>
+      // Fix logo link to always point to homepage
+      document.addEventListener('DOMContentLoaded', function() {
+        const logoLinks = document.querySelectorAll('.md-header__button.md-logo');
+        logoLinks.forEach(link => {
+          if (link.getAttribute('href') === '../True' || link.getAttribute('href') === 'True') {
+            link.setAttribute('href', '../');
+          }
+        });
+      });
+      
       // Enhanced animations and interactions
       document.addEventListener('DOMContentLoaded', function() {
         // Smooth scrolling for anchor links

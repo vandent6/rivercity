@@ -242,8 +242,8 @@ An **automatic bid** means the winning team from each tournament automatically q
     Don't miss your chance to compete for MiHSEF State Finals autobids and meet with college recruiters!
 
     [:material-arrow-right: Register Your Team](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button .md-button--primary }
-    [:material-calendar: View Full Schedule](tournament/schedule.md){ .md-button }
-    [:material-help-circle: Get Help](resources/faq.md){ .md-button }
+    [:material-calendar: View Full Schedule](#-detailed-schedule){ .md-button }
+    [:material-help-circle: Get Help](/resources/faq.md){ .md-button }
 
 ---
 

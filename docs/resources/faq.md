@@ -1,14 +1,14 @@
 # Frequently Asked Questions
 
-- :material-help-circle: **General Questions**
+=== "General Questions"
 
     **Common questions** about the tournament, registration, and event details
 
-- :material-account-group: **Registration**
+=== "Registration"
 
     **Registration process**, deadlines, pricing, and team requirements
 
-- :material-trophy: **Tournament**
+=== "Tournament"
 
     **Tournament format**, rules, prizes, and competition details
 

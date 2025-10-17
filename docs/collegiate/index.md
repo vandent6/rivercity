@@ -214,8 +214,8 @@ All games follow **NECC (National Esports Collegiate Conference)** competitive r
     Don't miss your chance to compete in front of thousands of spectators and connect with college recruiters!
 
     [:material-arrow-right: Register Your Team](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
-    [:material-calendar: View Full Schedule](tournament/schedule.md){ .md-button }
-    [:material-help-circle: Get Help](resources/faq.md){ .md-button }
+    [:material-calendar: View Full Schedule](#-detailed-schedule){ .md-button }
+    [:material-help-circle: Get Help](/resources/faq.md){ .md-button }
 
 ---
 

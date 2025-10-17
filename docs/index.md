@@ -2,37 +2,37 @@
 
 ---
 
-## 🏆 What Makes This Special
+## What Makes This Special
 
-- :material-account-group: **Massive Live Audience**
+=== "Massive Live Audience"
 
     Compete in front of **35,000+ Comic-Con spectators** in a professional tournament environment at one of Michigan's biggest events
 
-- :material-ticket: **Free Comic-Con Passes**
+=== "Free Comic-Con Passes"
 
     **Every player and coach** receives a **free 3-day Comic-Con pass** worth over $100 - access to all panels, exhibits, and events
 
-- :material-school: **College Recruiting**
+=== "College Recruiting"
 
     Connect with **college scouts and esports programs** during dedicated recruiting sessions. Opportunity for scholarships and collegiate esports
 
-- :material-trophy: **Championship Prizes**
+=== "Championship Prizes"
 
     **Trophies for all winners** • **MiHSEF State Finals autobids** for high school champions • Recognition in front of thousands
 
-- :material-monitor: **Professional Streaming**
+=== "Professional Streaming"
 
     **Ferris State University** provides professional streaming and broadcasting • All matches streamed live with expert commentary
 
-- :material-star: **MiHSEF State Finals**
+=== "MiHSEF State Finals"
 
     **High school tournament winners** earn **automatic bids** to the prestigious MiHSEF State Finals championship
 
 ---
 
-## 🎯 Tournament Divisions
+## Tournament Divisions
 
-- :material-school: **Collegiate Invitational**
+=== "Collegiate Invitational"
 
     **Friday-Saturday, Nov 14-15**  
     **16 teams** per game  
@@ -40,7 +40,7 @@
 
     [:material-arrow-right: Collegiate Details](collegiate/index.md){ .md-button }
 
-- :material-account-group: **High School Invitational**
+=== "High School Invitational"
 
     **Saturday, Nov 15**  
     **Multiple formats**  
@@ -48,7 +48,7 @@
 
     [:material-arrow-right: High School Details](high-school/index.md){ .md-button }
 
-- :material-flag: **MiHSEF Regionals**
+=== "MiHSEF Regionals"
 
     **Saturday-Sunday, Nov 15-16**  
     **Season games & regional playoffs**  
@@ -58,19 +58,19 @@
 
 ---
 
-## 🎮 Featured Games
+## Featured Games
 
-- :material-shield: **Valorant**
+=== "Valorant"
 
     **Tactical 5v5 FPS**  
     Strategic team-based shooter with unique agents and abilities
 
-- :material-car-sports: **Rocket League**
+=== "Rocket League"
 
     **High-octane 3v3**  
     Soccer meets racing in this fast-paced competitive game
 
-- :material-sword-cross: **Super Smash Bros. Ultimate**
+=== "Super Smash Bros. Ultimate"
 
     **Crew Battle Format**  
     Team-based fighting game competition with crew battles

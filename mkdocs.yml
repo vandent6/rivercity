@@ -1,6 +1,6 @@
 site_name: MIHSEF Grand Rapids Comic-Con Esports Championship
 site_description: Official tournament guide and resources for the Michigan High School Esports Federation tournament at Grand Rapids Comic-Con
-site_url: https://rivercity.michiganesports.org
+site_url: https://rivercity.michiganesports.org/
 edit_uri: https://github.com/vandent6/rivercity/edit/main/docs/
 
 theme:
@@ -63,6 +63,14 @@ theme:
   extra_css:
     - assets/stylesheets/hero.css
     - assets/stylesheets/animations.css
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 
 plugins:
   - search

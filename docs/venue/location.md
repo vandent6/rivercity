@@ -1,18 +1,18 @@
 # Venue & Location
 
-- :material-map-marker: **DeVos Place**
+=== "DeVos Place"
 
     **Ballroom C**  
     303 Monroe Ave NW  
     Grand Rapids, MI 49503
 
-- :material-ticket: **Grand Rapids Comic-Con**
+=== "Grand Rapids Comic-Con"
 
     **35,000+ attendees**  
     **November 14-16, 2025**  
     Part of the region's biggest pop culture event
 
-- :material-car: **Accessibility**
+=== "Accessibility"
 
     **Full accessibility**  
     Convention center parking  
@@ -24,19 +24,19 @@
 
 ### DeVos Place Convention Center
 
-- :material-map-marker: **Address**
+=== "Address"
 
     **303 Monroe Ave NW**  
     **Grand Rapids, MI 49503**  
     **Downtown Grand Rapids**
 
-- :material-phone: **Contact**
+=== "Contact"
 
     **Phone**: (616) 742-6500  
     **Website**: [devosplace.org](https://www.devosplace.org)  
     **Email**: info@devosplace.org
 
-- :material-account-group: **Capacity**
+=== "Capacity"
 
     **Ballroom C**: 1,200+ capacity  
     **Professional setup** for esports  
@@ -64,18 +64,18 @@
 
 ### Event Overview
 
-- :material-ticket: **Comic-Con Access**
+=== "Comic-Con Access"
 
     **Free 3-day passes** (worth $100+) for all players and coaches  
     **Access to all panels**, exhibits, and celebrity guests
 
-- :material-account-group: **Event Scale**
+=== "Event Scale"
 
     **35,000+ attendees**  
     **Major pop culture convention**  
     **Celebrity guests** and panels
 
-- :material-star: **Additional Activities**
+=== "Additional Activities"
 
     **Artist panels** and workshops  
     **Cosplay contests** and events  

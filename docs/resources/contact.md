@@ -1,16 +1,16 @@
 # Contact Information
 
-- :material-email: **General Questions**
+=== "General Questions"
 
     **info@mihsef.org**  
     General tournament information and support
 
-- :material-trophy: **Tournament Director**
+=== "Tournament Director"
 
     **dakotav@mihsef.org**  
     Tournament-specific questions and concerns
 
-- :material-school: **Collegiate/Streaming**
+=== "Collegiate/Streaming"
 
     **adamantor@ferris.edu**  
     Collegiate program questions and streaming information
@@ -275,17 +275,17 @@
 
 - :material-account-group: **Check FAQ**
 
-    **Review**: [FAQ page](resources/faq.md) for common questions  
+    **Review**: [FAQ page](/resources/faq.md) for common questions  
     **Save time**: Many questions already answered
 
 - :material-calendar: **Check Schedule**
 
-    **Review**: [Tournament schedule](tournament/schedule.md)  
+    **Review**: [Collegiate Schedule](/collegiate/index.md) and [High School Schedule](/high-school/index.md)  
     **Verify**: Dates, times, and locations
 
 - :material-trophy: **Check Rules**
 
-    **Review**: [Tournament rules](tournament/rules.md)  
+    **Review**: [Game Rulesets](/rulesets/valorant.md)  
     **Verify**: Requirements and regulations
 
 ### When Contacting Us
@@ -306,19 +306,19 @@
 - :material-account-group: **Registration**
 
     **Question**: How do I register my team?  
-    **Answer**: Use the registration links on the [registration page](tournament/registration.md)  
+    **Answer**: Use the registration links on the [Collegiate](/collegiate/index.md) or [High School](/high-school/index.md) pages  
     **Contact**: info@mihsef.org
 
 - :material-calendar: **Schedule**
 
     **Question**: What are the tournament dates and times?  
-    **Answer**: Check the [tournament schedule](tournament/schedule.md)  
+    **Answer**: Check the [Collegiate Schedule](/collegiate/index.md) or [High School Schedule](/high-school/index.md)  
     **Contact**: dakotav@mihsef.org
 
 - :material-trophy: **Prizes**
 
     **Question**: What do winners receive?  
-    **Answer**: Check the [prizes page](tournament/prizes.md)  
+    **Answer**: Check the [Collegiate Prizes](/collegiate/index.md) or [High School Prizes](/high-school/index.md)  
     **Contact**: dakotav@mihsef.org
 
 ---
@@ -330,7 +330,7 @@
 
     [:material-email: Send Email](mailto:info@mihsef.org){ .md-button .md-button--primary }
     [:material-phone: Call Us](tel:+1234567890){ .md-button }
-    [:material-help-circle: View FAQ](resources/faq.md){ .md-button }
+    [:material-help-circle: View FAQ](/resources/faq.md){ .md-button }
 
 ---
 

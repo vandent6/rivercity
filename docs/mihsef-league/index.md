@@ -238,8 +238,8 @@ Schools participating in the **regular fall MiHSEF season** can play their **reg
     Don't miss your chance to compete in interstate competition and advance in the MiHSEF season!
 
     [:material-arrow-right: Register Your Team](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button .md-button--primary }
-    [:material-calendar: View Full Schedule](tournament/schedule.md){ .md-button }
-    [:material-help-circle: Get Help](resources/faq.md){ .md-button }
+    [:material-calendar: View Full Schedule](/high-school/index.md){ .md-button }
+    [:material-help-circle: Get Help](/resources/faq.md){ .md-button }
 
 ---
 
