@@ -24,7 +24,7 @@
 
     Everything you need to know about the championship format, rules, and prizes.
 
-    [:material-arrow-right: Tournament Details](#-quick-schedule){ .md-button }
+    [:material-arrow-right: Tournament Details](#quick-schedule-quick-schedule){ .md-button }
 
 === "Game Rulesets"
 
@@ -66,7 +66,7 @@
 
     **Championship trophies** and **MiHSEF State Finals autobids** for top performers
 
-    [:material-arrow-right: View Prizes](#-tournament-highlights){ .md-button }
+    [:material-arrow-right: View Prizes](#tournament-highlights-tournament-highlights){ .md-button }
 
 ---
 
@@ -125,7 +125,7 @@
 
 ---
 
-## 🏆 Tournament Highlights
+## 🏆 Tournament Highlights {#tournament-highlights}
 
 ### What Makes This Special
 
@@ -176,7 +176,7 @@
 
 ---
 
-## 📅 Quick Schedule
+## 📅 Quick Schedule {#quick-schedule}
 
 - :material-calendar: **Friday, Nov 14**
 
@@ -204,7 +204,7 @@
 !!! info "Need More Details?"
     Get the complete schedule with exact times, locations, and game-specific information.
 
-    [:material-arrow-right: Full Schedule](#-quick-schedule){ .md-button .md-button--primary }
+    [:material-arrow-right: Full Schedule](#quick-schedule-quick-schedule){ .md-button .md-button--primary }
 
 ---
 
@@ -290,7 +290,7 @@
 
     [:material-school: Register Collegiate](https://forms.gle/JYcAzXwEZKmgxTWC7){ .md-button .md-button--primary }
     [:material-account-group: Register High School](https://docs.google.com/forms/d/e/1FAIpQLSd3r1NzL10BirXijn1sSXsxCCBaWiEHWPQAFgjF4HdGg5AkiA/viewform){ .md-button }
-    [:material-calendar: View Schedule](#-quick-schedule){ .md-button }
+    [:material-calendar: View Schedule](#quick-schedule-quick-schedule){ .md-button }
     [:material-help-circle: Get Help](/resources/faq.md){ .md-button }
 
 ---
