@@ -30,6 +30,7 @@ theme:
         name: Switch to system preference
   features:
     - announce.dismiss
+    - fontawesome
     - header.autohide
     - content.action.edit
     - content.action.view
@@ -97,7 +98,6 @@ extra:
 copyright: Copyright &copy; 2025 Michigan High School Esports Federation
 
 nav:
-  - Home: index.md
   - Overview: overview/index.md
   - Collegiate Invitational: collegiate/index.md
   - High School Invitational: high-school/index.md
