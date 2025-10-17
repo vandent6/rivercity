@@ -7,22 +7,13 @@ set -euo pipefail
 # Configuration
 SITE_DIR="/var/www/mkdocs/site"
 PROJ_DIR="/opt/mkdocs/rivercity"
-VENV="/opt/mkdocs/.venv"
+VENV="${PROJ_DIR}/.venv"
 
 echo "🚀 Starting River City Invitational deployment..."
 
 # Check if we're in the right directory
 if [ ! -f "mkdocs.yml" ]; then
     echo "❌ Error: mkdocs.yml not found. Please run this script from the project root."
-    exit 1
-fi
-
-# Activate virtual environment
-if [ -d "$VENV" ]; then
-    echo "✅ Activating virtual environment..."
-    source "${VENV}/bin/activate"
-else
-    echo "❌ Virtual environment not found at $VENV"
     exit 1
 fi
 
@@ -35,6 +26,15 @@ if [ -d ".git" ]; then
     git pull --rebase
 fi
 
+# Create/activate virtual environment
+if [ ! -d "${VENV}" ]; then
+    echo "🔧 Creating virtual environment..."
+    python3 -m venv "${VENV}"
+fi
+
+echo "✅ Activating virtual environment..."
+source "${VENV}/bin/activate"
+
 # Install/update requirements
 echo "📦 Installing requirements..."
 pip install -r requirements.txt
@@ -45,10 +45,11 @@ mkdocs build --clean
 
 # Deploy to web root
 echo "🚀 Deploying to web server..."
-rsync -a --delete site/ "${SITE_DIR}/"
+sudo rsync -a --delete site/ "${SITE_DIR}/"
 
-# Set proper permissions
-chown -R docs:docs "${SITE_DIR}"
+# Set proper permissions for Caddy
+echo "🔐 Setting file permissions..."
+sudo chown -R docs:docs "${SITE_DIR}"
 
 echo "✅ Deployment completed successfully at $(date)"
 echo "🌐 Site should be available at your configured domain"

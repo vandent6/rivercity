@@ -27,9 +27,13 @@ fi
 
 cd "${PROJECT_DIR}"
 
-# Activate virtual environment
-echo "📦 Activating virtual environment..."
-source "${VENV_DIR}/bin/activate"
+# Check if we're already in a virtual environment
+if [[ -n "${VIRTUAL_ENV:-}" ]]; then
+    echo "📦 Using existing virtual environment: ${VIRTUAL_ENV}"
+else
+    echo "📦 Activating virtual environment..."
+    source "${VENV_DIR}/bin/activate"
+fi
 
 # Build the site
 echo "🏗️  Building MkDocs site..."

@@ -2,47 +2,44 @@
 
 ## Quick Setup on Lightsail Server
 
-### 1. Replace existing site
+### 1. Initial Setup
 ```bash
-# Switch to docs user
-sudo -iu docs
-
 # Navigate to mkdocs directory
 cd /opt/mkdocs
 
-# Remove old site
-rm -rf mysite
+# Remove old site (if exists)
+sudo rm -rf mysite
 
 # Clone rivercity repository
-git clone https://github.com/yourusername/rivercity.git mysite
+git clone git@github.com:vandent6/rivercity.git rivercity
 
 # Navigate to new site
-cd mysite
+cd rivercity
 
-# Activate virtual environment
-source ../.venv/bin/activate
-
-# Install requirements
-pip install -r requirements.txt
-
-# Build and deploy
-mkdocs build --clean
-rsync -a --delete site/ /var/www/mkdocs/site/
+# Install deployment scripts
+./install-deploy-script.sh
 ```
 
-### 2. Update deploy script
-Replace `/usr/local/bin/mkdocs-deploy` with the provided `deploy.sh` script:
-
+### 2. First Deployment
 ```bash
-sudo cp deploy.sh /usr/local/bin/mkdocs-deploy
-sudo chmod +x /usr/local/bin/mkdocs-deploy
+# Run full deployment (creates venv, installs dependencies, builds site)
+sudo rivercity-deploy
 ```
 
-### 3. Future deployments
+### 3. Future Updates
 After making changes to the repository:
 
 ```bash
-sudo /usr/local/bin/mkdocs-deploy
+# Quick update (assumes venv already exists)
+sudo rivercity-update
+```
+
+### 4. Manual Deployment (Alternative)
+If you prefer to run manually:
+
+```bash
+cd /opt/mkdocs/rivercity
+./deploy.sh
 ```
 
 ## What's Ready for Production
