@@ -1,32 +1,43 @@
 #!/usr/bin/env bash
-# River City Invitational - Quick Site Update Script
-# Run this script to update the live site with latest changes
+# River City Invitational - Production Deployment Script
+# This script builds and deploys the MkDocs site to production
 
 set -euo pipefail
 
 # Configuration
-PROJ_DIR="/opt/mkdocs/rivercity"
 SITE_DIR="/var/www/mkdocs/site"
+PROJ_DIR="/opt/mkdocs/rivercity"
+VENV="/opt/mkdocs/.venv"
 
-echo "🔄 Updating River City Invitational site..."
+echo "🚀 Starting River City Invitational deployment..."
+
+# Check if we're in the right directory
+if [ ! -f "mkdocs.yml" ]; then
+    echo "❌ Error: mkdocs.yml not found. Please run this script from the project root."
+    exit 1
+fi
+
+# Activate virtual environment
+if [ -d "$VENV" ]; then
+    echo "✅ Activating virtual environment..."
+    source "${VENV}/bin/activate"
+else
+    echo "❌ Virtual environment not found at $VENV"
+    exit 1
+fi
 
 # Navigate to project directory
 cd "${PROJ_DIR}"
 
-# Check if we're in the right directory
-if [ ! -f "mkdocs.yml" ]; then
-    echo "❌ Error: mkdocs.yml not found in ${PROJ_DIR}"
-    exit 1
+# Pull latest changes (if this is a git repo)
+if [ -d ".git" ]; then
+    echo "📥 Pulling latest changes..."
+    git pull --rebase
 fi
 
-# Pull latest changes from git
-echo "📥 Pulling latest changes from git..."
-# Use the ubuntu user's SSH keys for git operations
-sudo -u ubuntu git pull --rebase
-
-# Activate virtual environment
-echo "✅ Activating virtual environment..."
-source .venv/bin/activate
+# Install/update requirements
+echo "📦 Installing requirements..."
+pip install -r requirements.txt
 
 # Build the documentation
 echo "🏗️  Building documentation..."
@@ -34,11 +45,10 @@ mkdocs build --clean
 
 # Deploy to web root
 echo "🚀 Deploying to web server..."
-sudo rsync -a --delete site/ "${SITE_DIR}/"
+rsync -a --delete site/ "${SITE_DIR}/"
 
-# Set proper permissions for Caddy
-echo "🔐 Setting file permissions..."
-sudo chown -R docs:docs "${SITE_DIR}"
+# Set proper permissions
+chown -R docs:docs "${SITE_DIR}"
 
-echo "✅ Site updated successfully at $(date)"
-echo "🌐 Changes should be live now!"
+echo "✅ Deployment completed successfully at $(date)"
+echo "🌐 Site should be available at your configured domain"
